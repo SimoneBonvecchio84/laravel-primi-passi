@@ -19,11 +19,17 @@
     <h2>{{ $greeting }} {{ $username }} </h2>
 
     <div>
-        <h3>Studenti Classe 1</h3>
+        @if ($like)
+         <h3>Questa è la calsse 1</h3>      
+        @else
+          <h3>Non è la calsse 1</h3>  
+        @endif  
+       
+        <h3>Studenti</h3>
         <ul>
            
                 @foreach ($students as $curStudent)
-                <li> Ciao, {{ $curStudent }}  </li>   
+                <li>  {{ $curStudent }}  </li>   
                 @endforeach
             
         </ul>

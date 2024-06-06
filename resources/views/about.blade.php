@@ -17,6 +17,12 @@
 
     <h2> {{ $greeting }} {{ $username }}</h2>
 
+    @if ($like)
+        <h3>Questa è la calsse 2</h3>
+    @else
+        <h3>Questa non è la calsse 2</h3>
+    @endif
+
     <h3>Studenti</h3>
 
     <ul>

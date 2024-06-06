@@ -15,9 +15,10 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function () {
-    $username = "Classe1";
-    $greeting = "Ciao";
-    $students = [
+    $username   = "Classe1";
+    $greeting   = "Ciao";
+    $likeClass1 = true;
+    $students   = [
         "Luca",
         "Ugo",
         "Ada",
@@ -34,15 +35,17 @@ Route::get('/', function () {
     $data = [
         'username' => $username,
         'greeting' => $greeting,
+        'like'     => $likeClass1,
         'students' => $students
     ];
     return view('home', $data);
 })->name('home');
 
 Route::get('/chi-siamo', function () {
-    $username = "Classe2";
-    $greeting = "Ciao";
-    $students = [
+    $username   = "Classe2";
+    $greeting   = "Ciao";
+    $likeClass2 = true;
+    $students   = [
         "Danila",
         "Laura",
         "Rossella",
@@ -55,9 +58,10 @@ Route::get('/chi-siamo', function () {
     ];
 
     $data = [
-        'username' => $username,
-        'greeting' => $greeting,
-        'students' => $students
+        'username'   => $username,
+        'greeting'   => $greeting,
+        'like'       => $likeClass2,
+        'students'   => $students
     ];
     return view('about', $data);
 })->name('about');
