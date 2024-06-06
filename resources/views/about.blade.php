@@ -15,6 +15,16 @@
         </ul>
     </nav>
 
-    <h1></h1>
+    <h2> {{ $greeting }} {{ $username }}</h2>
+
+    <h3>Studenti</h3>
+
+    <ul>
+        @foreach ($students as $curStudent)
+            <li>
+                {{ $curStudent }}
+            </li>
+        @endforeach
+    </ul>
 </body>
 </html>
