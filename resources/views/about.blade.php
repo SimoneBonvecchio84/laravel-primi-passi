@@ -7,14 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Benvenuti in Laravel!</h1>
-
-    {{-- <nav>
-        <ul>
-            <li><a href="{{ route('home')}}">Home</a></li>
-            <li><a href="{{ route('welcome')}}">Home</a></li>
-            
-        </ul>
-    </nav> --}}
+    <h1>Ciao!</h1>
 </body>
 </html>
