@@ -7,16 +7,26 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Laravel</h1>
+    <h1>Classe 1</h1>
 
     <nav>
         <ul>
-            <li><a href="{{ route('home') }}">Home</a></li>
-            <li><a href="{{ route('about') }}">Chi Siamo</a></li>
-            
+            <li><a href="{{ route('home') }}">Classe 1</a></li>
+            <li><a href="{{ route('about') }}">Classe 2</a></li>    
         </ul>
     </nav>
 
     <h2>{{ $greeting }} {{ $username }} </h2>
+
+    <div>
+        <h3>Studenti Classe 1</h3>
+        <ul>
+           
+                @foreach ($students as $curStudent)
+                <li> Ciao, {{ $curStudent }}  </li>   
+                @endforeach
+            
+        </ul>
+    </div>
 </body>
 </html>

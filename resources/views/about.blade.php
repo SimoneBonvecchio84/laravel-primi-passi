@@ -7,6 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Ciao!</h1>
+    <h1>Classe 2</h1>
+    <nav>
+        <ul>
+            <li><a href="{{ route('home') }}">Classe1</a></li>
+            <li><a href="{{ route('about') }}">Classe2</a></li>
+        </ul>
+    </nav>
+
+    <h1></h1>
 </body>
 </html>
